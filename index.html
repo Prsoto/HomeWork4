@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Timed Quiz </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <nav>
+        <p id="viewHighScore" >View Highscores</p>
+        <p id="timesUp" style="display: none;">Time's Up! </p>
+        <p id="timeLeft">Time: 0</p>
+    </nav>
+    <main>
+
+        <div id="startQuiz">
+            <h1 id="start-title"> Quiz Challenge</h1>
+            <p id="start-msg">Go Ahead and answer the following Coded Timed Quiz, there will be questions within a time limit. 
+                Be aware that incorrect answers will penalize your time by ten seconds. Good Luck!</p>
+            <button id="startQuizBtn" class="btn" type="button">Start Quiz</button>
+        </div>
+
+        <div id="questionDiv" style="display: none;">
+            <h1 id="questionTitle"></h1>
+            <ul>
+                <li id="btn0" class="btn"></li>
+                <li id="btn1" class="btn"></li>
+                <li id="btn2" class="btn"></li>
+                <li id="btn3" class="btn"></li>
+            </ul>
+            <hr id="spaceBrake" style="display: none;">
+            <p id="answerMessage" style="display: none;"></p>
+        </div>
+
+        <div id="results" style="display: none;">
+            <h1 id="end-title">All done!</h1>
+            <h2>Your final score is <span id="finalScore"></span> !</h2>
+            <form id="end-form" action="">
+                <label for="initialInput">Enter initials: </label>
+                <input id="initialInput" type="text">
+                <input class="btn" id="submitInitialBtn" type="submit">
+            </form>
+        </div>
+
+        <div id="highScoreSection" style="display: none;">
+            <h1 id="highscores-title">Highscores</h1>
+            <h2 id="listOfHighScores" class="h2l"></h2>
+            <div id="highscores-container"></div>
+            <button id="goBackBtn" class="btn" type="button">Go Back</button>
+            <button id="clearHighScoreBtn" class="btn" type="button">Clear Highscores</button>
+        </div>
+
+    </main>
+    
+    <script src="./script.js"></script>
+
+<style>::-webkit-scrollbar {display: none;}</style></body>
+</html>
